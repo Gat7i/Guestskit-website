@@ -537,13 +537,13 @@ function Footer() {
           <span className="font-serif text-snow text-xl block">GuestsKit</span>
           <p className="text-sm mt-1">Conciergerie digitale pour hôtels.</p>
         </div>
-        <nav className="flex flex-wrap gap-x-7 gap-y-2 text-sm" aria-label="Liens du pied de page">
-          <a href="#fonctionnalites" className="hover:text-snow/70 transition-colors">Fonctionnalités</a>
-          <a href="#comment-ca-marche" className="hover:text-snow/70 transition-colors">Comment ça marche</a>
-          <a href="#equipes" className="hover:text-snow/70 transition-colors">Pour les équipes</a>
-          <a href="#demo" className="hover:text-snow/70 transition-colors">Démo</a>
-          <a href="#faq" className="hover:text-snow/70 transition-colors">FAQ</a>
-          <a href="#contact" className="hover:text-snow/70 transition-colors">Contact</a>
+        <nav className="flex flex-wrap gap-x-7 gap-y-0 text-sm" aria-label="Liens du pied de page">
+          <a href="#fonctionnalites" className="py-2 hover:text-snow/70 transition-colors">Fonctionnalités</a>
+          <a href="#comment-ca-marche" className="py-2 hover:text-snow/70 transition-colors">Comment ça marche</a>
+          <a href="#equipes" className="py-2 hover:text-snow/70 transition-colors">Pour les équipes</a>
+          <a href="#demo" className="py-2 hover:text-snow/70 transition-colors">Démo</a>
+          <a href="#faq" className="py-2 hover:text-snow/70 transition-colors">FAQ</a>
+          <a href="#contact" className="py-2 hover:text-snow/70 transition-colors">Contact</a>
         </nav>
         <p className="text-xs">© {new Date().getFullYear()} GuestsKit.</p>
       </div>
