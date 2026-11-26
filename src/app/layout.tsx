@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   description:
     "GuestsKit donne à votre hôtel sa propre application web accessible par QR code : restaurants, activités, spectacles, plan interactif et demandes à la réception, sans installation.",
   metadataBase: new URL("https://www.guestskit.com"),
+  alternates: { canonical: "https://www.guestskit.com" },
   openGraph: {
     title: "GuestsKit — Conciergerie digitale pour hôtels",
     description:
@@ -36,6 +37,11 @@ export const metadata: Metadata = {
     siteName: "GuestsKit",
     locale: "fr_FR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GuestsKit — Conciergerie digitale pour hôtels",
+    description: "Une application web à votre image — accessible par QR code, sans téléchargement.",
   },
 };
 
