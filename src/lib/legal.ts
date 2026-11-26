@@ -8,7 +8,7 @@
 export const legal = {
   raisonSociale: "",           // [À CONFIRMER : Fethi — nom légal de la société]
   formeJuridique: "",          // [À CONFIRMER : Fethi — ex. SUARL, SARL, SAS…]
-  pays: "",                    // [À CONFIRMER : Fethi — ex. Tunisie]
+  pays: "Tunisie",
   adresse: "",                 // [À CONFIRMER : Fethi]
   immatriculation: "",         // [À CONFIRMER : Fethi — numéro RNE ou équivalent]
   directeurPublication: "",    // [À CONFIRMER : Fethi — probablement Fethi Amine Mami]
@@ -17,9 +17,12 @@ export const legal = {
   dureeConservation: "",       // [À CONFIRMER : Fethi — durée de conservation des demandes de démo]
 
   // Ce que le site collecte réellement (vérification au 26/11/2026) :
-  // - Formulaire de contact : nom, hôtel, téléphone, e-mail — transmis par mailto, non stockés côté serveur.
-  // - Cookies : aucun cookie déposé par le site. Vercel peut collecter des logs d'accès côté infrastructure.
+  // - Formulaire de contact : le bouton ouvre le client mail du visiteur ; le message arrive sur la boîte
+  //   Gmail de GuestsKit (service Google LLC, États-Unis) — aucune donnée ne transite par nos serveurs.
+  // - Cookies : aucun cookie déposé par le site.
+  // - Hébergeur : Vercel Inc. (États-Unis) — adresse à confirmer sur vercel.com/legal avant publication.
   // - Analytics : Vercel Analytics non activé.
+  // shortcut: texte juridique à faire relire par un juriste avant activation des pages légales
   analytics: false as boolean,
 } as const;
 
