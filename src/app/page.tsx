@@ -55,6 +55,8 @@ const faqSchema = {
   })),
 };
 
+const DEMO_URL = process.env.NEXT_PUBLIC_DEMO_URL ?? "https://www.guestskit.app";
+
 /* ── Page ─────────────────────────────────────────────────── */
 export default function Home() {
   return (
@@ -416,10 +418,10 @@ function Demo() {
         <h2 className="font-serif text-4xl sm:text-5xl text-night mb-5 leading-tight">
           Essayez GuestsKit<br />sans vous engager.
         </h2>
+        {/* TODO-DEMO: réintroduire "hôtel de démonstration fictif" quand la démo Hôtel de la Mer sera en ligne */}
         <p className="text-charcoal/70 max-w-xl mb-12 leading-relaxed">
-          L'application est en ligne avec un hôtel de démonstration fictif.
-          Parcourez le plan interactif, les restaurants, les activités et le système de demandes
-          — comme un vrai client d'hôtel.
+          L'application est en ligne : parcourez le plan interactif, les restaurants, les activités
+          et le système de demandes comme un vrai client d'hôtel.
         </p>
 
         {/* Captures démo — 3 téléphones côte à côte */}
@@ -450,7 +452,7 @@ function Demo() {
             Demander une démo personnalisée
           </a>
           <a
-            href="https://www.guestskit.app"
+            href={DEMO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sapphire text-sm font-medium flex items-center gap-2 hover:text-sapphire/80 transition-colors sm:pt-3 focus-visible:outline-sapphire"
