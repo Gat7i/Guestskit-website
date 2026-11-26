@@ -9,8 +9,8 @@ App de démo : **www.guestskit.app**
 
 ## Stack
 
-- Next.js 15 App Router, TypeScript, TailwindCSS 4
-- Site statique/SSG pur — pas de base de données, pas d'auth
+- Next.js ^15.3.3 App Router, TypeScript, TailwindCSS 4
+- Site statique/SSG (output: standalone pour Vercel) — pas de base de données, pas d'auth
 - Fonts via `next/font/google` (variables CSS sur `<html>`)
 
 ## Structure
@@ -35,7 +35,7 @@ Définis dans `src/app/globals.css` sous `@theme` — utilisables comme classes 
 | `sapphire` | `#2D55A0` | Saphir — liens, accents interactifs, hover states |
 | `gold` | `#C4933F` | Or — **CTA unique** et **barre verticale signature** uniquement |
 | `charcoal` | `#2E2E2E` | Anthracite — texte corps principal |
-| `muted` | `#9CA3AF` | Gris doux — texte secondaire, placeholders |
+| `muted` | `#6B7280` | Gris — texte secondaire (ratio AA 4,55:1 sur snow ✓) |
 | `border` | `#E5E2DA` | Séparateurs, bordures subtiles |
 
 **Règles d'emploi :**
@@ -101,6 +101,22 @@ CTA unique répété : **« Demander une démo »** ou **« Demander une démo p
 
 Ce projet occupe la racine de `guestskit.com`.  
 L'app hôtel est sur `www.guestskit.app` (projet Vercel séparé).
+
+---
+
+## Coordination multi-agents
+
+Dossier partagé : `C:\Users\fethi\Documents\Projets\guestskit-coordination\`
+
+**En début de session**, lire dans l'ordre :
+1. `README.md` — protocole de communication
+2. `agents.md` — rôles des trois assistants (Hub, App, Vitrine)
+3. `faits-verifies.md` — source de vérité du contenu
+4. `STATUS.md` — décisions en cours
+5. `inbox/vitrine/` — messages entrants
+
+**Envoyer un message** : créer un fichier dans `inbox/<destinataire>/` (format dans README.md).  
+**Règle absolue** : push sur `main` = déploiement en production → toujours demander confirmation à Fethi.
 
 ---
 
