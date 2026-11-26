@@ -422,13 +422,24 @@ function Demo() {
           — comme un vrai client d'hôtel.
         </p>
 
-        {/* Emplacement captures démo */}
-        <div
-          className="rounded-3xl bg-snow border-2 border-dashed border-border flex items-center justify-center h-72 mb-10 text-muted text-sm"
-          role="img"
-          aria-label="Emplacement réservé aux captures de la démo"
-        >
-          [CAPTURE DÉMO À INSÉRER]
+        {/* Captures démo — 3 téléphones côte à côte */}
+        <div className="flex justify-center gap-6 mb-12">
+          {[
+            { src: "/captures/c-accueil.jpg",    alt: "Écran d'accueil de la démo GuestKit" },
+            { src: "/captures/c-restaurants.jpg", alt: "Écran restaurants de la démo GuestKit" },
+            { src: "/captures/c-spectacles.jpg",  alt: "Écran spectacles de la démo GuestKit" },
+          ].map(({ src, alt }, i) => (
+            <div
+              key={src}
+              className={`w-36 flex-shrink-0 ${i === 1 ? "-mt-4" : "mt-4"}`}
+            >
+              <div className="bg-night rounded-[2.2rem] p-1.5 shadow-xl ring-1 ring-black/5">
+                <div className="rounded-[1.8rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
+                  <Image src={src} alt={alt} width={144} height={312} className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="flex flex-col sm:flex-row gap-5 items-start">
@@ -439,7 +450,7 @@ function Demo() {
             Demander une démo personnalisée
           </a>
           <a
-            href="https://www.guestskit.com/lesorangers"
+            href="https://guestskit.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sapphire text-sm font-medium flex items-center gap-2 hover:text-sapphire/80 transition-colors sm:pt-3 focus-visible:outline-sapphire"
