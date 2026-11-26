@@ -24,16 +24,16 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "GuestKit — Conciergerie digitale pour hôtels",
+  title: "GuestsKit — Conciergerie digitale pour hôtels",
   description:
-    "GuestKit donne à votre hôtel sa propre application web accessible par QR code : restaurants, activités, spectacles, plan interactif et demandes à la réception, sans installation.",
+    "GuestsKit donne à votre hôtel sa propre application web accessible par QR code : restaurants, activités, spectacles, plan interactif et demandes à la réception, sans installation.",
   metadataBase: new URL("https://www.guestskit.com"),
   openGraph: {
-    title: "GuestKit — Conciergerie digitale pour hôtels",
+    title: "GuestsKit — Conciergerie digitale pour hôtels",
     description:
       "Une application web à votre image — accessible par QR code, sans téléchargement. Vos clients découvrent l'hôtel, planifient leurs activités et envoient leurs demandes à la réception.",
     url: "https://www.guestskit.com",
-    siteName: "GuestKit",
+    siteName: "GuestsKit",
     locale: "fr_FR",
     type: "website",
   },

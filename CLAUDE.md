@@ -1,8 +1,8 @@
-# GuestKit — Site Vitrine
+# GuestsKit — Site Vitrine
 
 > **Lis [BRIEF-SITE-GUESTKIT.md](./BRIEF-SITE-GUESTKIT.md) avant toute tâche de contenu ou de design.**
 
-Site marketing de GuestKit hébergé sur www.guestskit.com (racine).  
+Site marketing de GuestsKit hébergé sur www.guestskit.com (racine).  
 App de démo : **www.guestskit.app**
 
 ---
@@ -59,7 +59,7 @@ DM Sans : line-height `leading-relaxed` pour le corps.
 ```html
 <span class="block w-1 h-8 bg-gold rounded-full mb-7" aria-hidden="true" />
 ```
-Placée au-dessus de chaque titre de section. C'est la signature visuelle reprise de l'app GuestKit.
+Placée au-dessus de chaque titre de section. C'est la signature visuelle reprise de l'app GuestsKit.
 
 ### Bouton CTA principal
 

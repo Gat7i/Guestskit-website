@@ -4,7 +4,7 @@ import Image from "next/image";
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "GuestKit",
+  name: "GuestsKit",
   url: "https://www.guestskit.com",
   description:
     "Conciergerie digitale pour hôtels — application web accessible par QR code, sans installation.",
@@ -13,10 +13,10 @@ const orgSchema = {
 const faqItems = [
   {
     q: "Faut-il télécharger une application ?",
-    a: "Non. GuestKit est une application web (PWA). Vos clients y accèdent depuis le navigateur de leur téléphone, sans passer par l'App Store ni Google Play.",
+    a: "Non. GuestsKit est une application web (PWA). Vos clients y accèdent depuis le navigateur de leur téléphone, sans passer par l'App Store ni Google Play.",
   },
   {
-    q: "Combien de temps faut-il pour déployer GuestKit ?",
+    q: "Combien de temps faut-il pour déployer GuestsKit ?",
     a: "L'installation, la configuration et la mise en ligne prennent 48 heures. Votre équipe reçoit une formation au back-office incluse dans la mise en place.",
   },
   {
@@ -36,7 +36,7 @@ const faqItems = [
     a: "Une connexion Internet est nécessaire pour accéder à l'application et envoyer des demandes. Elle fonctionne sur toute connexion mobile (3G/4G) ou Wi-Fi.",
   },
   {
-    q: "GuestKit propose-t-il plusieurs langues ?",
+    q: "GuestsKit propose-t-il plusieurs langues ?",
     a: "L'interface est actuellement disponible en français. La gestion multilingue est prévue dans les prochaines versions. [À CONFIRMER]",
   },
   {
@@ -89,7 +89,7 @@ function Nav() {
     <header className="fixed top-0 inset-x-0 z-50 bg-snow/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-8">
         <a href="/" className="font-serif text-2xl text-night leading-none">
-          GuestKit
+          GuestsKit
         </a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-charcoal" aria-label="Navigation principale">
           <a href="#fonctionnalites" className="hover:text-night transition-colors">Fonctionnalités</a>
@@ -151,7 +151,7 @@ function Hero() {
               <div className="rounded-[2rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
                 <Image
                   src="/captures/c-accueil.jpg"
-                  alt="Écran d'accueil de l'application GuestKit sur mobile — tableau de bord hôtel"
+                  alt="Écran d'accueil de l'application GuestsKit sur mobile — tableau de bord hôtel"
                   width={224}
                   height={486}
                   className="w-full h-full object-cover"
@@ -272,32 +272,32 @@ function ClientFeatures() {
     <section className="bg-white divide-y divide-border">
       <PhoneFeature
         title="Plan interactif de l'établissement"
-        body="Fini les plans papier et les questions à la réception. GuestKit affiche le plan de votre établissement avec tous vos lieux de vie : restaurants, bars, piscines, espaces bien-être. Vos clients se repèrent en un coup d'œil."
+        body="Fini les plans papier et les questions à la réception. GuestsKit affiche le plan de votre établissement avec tous vos lieux de vie : restaurants, bars, piscines, espaces bien-être. Vos clients se repèrent en un coup d'œil."
         src="/captures/c-plan.jpg"
-        alt="Écran du plan interactif de l'hôtel dans GuestKit"
+        alt="Écran du plan interactif de l'hôtel dans GuestsKit"
       />
       <PhoneFeature
         title="Restaurants, bars et découvertes"
         body="Horaires, menus du jour, spécialités : tout est à jour en temps réel. Vos clients consultent l'offre de restauration, découvrent vos activités et les suggestions autour de l'hôtel — sans quitter leur chambre."
         src="/captures/c-restaurants.jpg"
-        alt="Écran des restaurants dans GuestKit"
+        alt="Écran des restaurants dans GuestsKit"
         src2="/captures/c-decouvertes.jpg"
-        alt2="Écran des découvertes et suggestions dans GuestKit"
+        alt2="Écran des découvertes et suggestions dans GuestsKit"
         reverse
       />
       <PhoneFeature
         title="Spectacles, animations et activités"
         body="Votre programme d'animations est disponible dès l'arrivée. Spectacles du soir, activités sportives, cours collectifs : vos clients planifient leur séjour et ne ratent plus rien."
         src="/captures/c-spectacles.jpg"
-        alt="Écran des spectacles dans GuestKit"
+        alt="Écran des spectacles dans GuestsKit"
         src2="/captures/c-animation.jpg"
-        alt2="Écran des animations dans GuestKit"
+        alt2="Écran des animations dans GuestsKit"
       />
       <PhoneFeature
         title="Demandes à la réception"
         body="Votre client envoie une demande en quelques secondes — serviettes, nettoyage, maintenance, question. La réception reçoit la demande en temps réel et peut y répondre directement depuis son tableau de bord."
         src="/captures/c-demandes.jpg"
-        alt="Écran des demandes client dans GuestKit"
+        alt="Écran des demandes client dans GuestsKit"
         reverse
       />
     </section>
@@ -362,7 +362,7 @@ function TeamFeatures() {
           Un tableau de bord pour votre équipe.
         </h2>
         <p className="text-muted mb-16 max-w-xl leading-relaxed">
-          GuestKit n'est pas seulement une app pour vos clients. C'est un outil de travail pour
+          GuestsKit n'est pas seulement une app pour vos clients. C'est un outil de travail pour
           votre réception, votre animation et votre direction.
         </p>
 
@@ -372,19 +372,19 @@ function TeamFeatures() {
               title: "Check-in et validation des séjours",
               body: "La réception crée le séjour du client, lui attribue sa chambre et valide son accès à l'application. Interface simple, prise en main sans formation particulière.",
               src: "/captures/a-checkin.jpg",
-              alt: "Interface de check-in du back-office GuestKit",
+              alt: "Interface de check-in du back-office GuestsKit",
             },
             {
               title: "Suivi des demandes en temps réel",
               body: "Chaque demande client arrive instantanément dans le tableau de bord. L'équipe la traite, la marque comme prise en charge et conserve un historique complet.",
               src: "/captures/a-demandes.jpg",
-              alt: "Tableau de bord des demandes dans GuestKit",
+              alt: "Tableau de bord des demandes dans GuestsKit",
             },
             {
               title: "Gestion du contenu et de l'espace",
               body: "Restaurants, horaires, spectacles, activités, plan interactif : tout est modifiable depuis le back-office, sans développeur. Éditeur visuel, galerie photos, gestion des catégories.",
               src: "/captures/a-editeur-plan.jpg",
-              alt: "Éditeur de plan interactif dans le back-office GuestKit",
+              alt: "Éditeur de plan interactif dans le back-office GuestsKit",
             },
           ].map((f) => (
             <div key={f.title}>
@@ -414,7 +414,7 @@ function Demo() {
       <div className="max-w-4xl mx-auto">
         <span className="block w-1 h-8 bg-gold rounded-full mb-7" aria-hidden="true" />
         <h2 className="font-serif text-4xl sm:text-5xl text-night mb-5 leading-tight">
-          Essayez GuestKit<br />sans vous engager.
+          Essayez GuestsKit<br />sans vous engager.
         </h2>
         <p className="text-charcoal/70 max-w-xl mb-12 leading-relaxed">
           L'application est en ligne avec un hôtel de démonstration fictif.
@@ -425,9 +425,9 @@ function Demo() {
         {/* Captures démo — 3 téléphones côte à côte */}
         <div className="flex justify-center gap-6 mb-12">
           {[
-            { src: "/captures/c-accueil.jpg",    alt: "Écran d'accueil de la démo GuestKit" },
-            { src: "/captures/c-restaurants.jpg", alt: "Écran restaurants de la démo GuestKit" },
-            { src: "/captures/c-spectacles.jpg",  alt: "Écran spectacles de la démo GuestKit" },
+            { src: "/captures/c-accueil.jpg",    alt: "Écran d'accueil de la démo GuestsKit" },
+            { src: "/captures/c-restaurants.jpg", alt: "Écran restaurants de la démo GuestsKit" },
+            { src: "/captures/c-spectacles.jpg",  alt: "Écran spectacles de la démo GuestsKit" },
           ].map(({ src, alt }, i) => (
             <div
               key={src}
@@ -563,7 +563,7 @@ function Footer() {
     <footer className="bg-[#060E1E] py-12 px-4 sm:px-6 text-snow/40">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
-          <span className="font-serif text-snow text-xl block">GuestKit</span>
+          <span className="font-serif text-snow text-xl block">GuestsKit</span>
           <p className="text-sm mt-1">Conciergerie digitale pour hôtels.</p>
         </div>
         <nav className="flex flex-wrap gap-x-7 gap-y-2 text-sm" aria-label="Liens du pied de page">
@@ -574,7 +574,7 @@ function Footer() {
           <a href="#faq" className="hover:text-snow/70 transition-colors">FAQ</a>
           <a href="#contact" className="hover:text-snow/70 transition-colors">Contact</a>
         </nav>
-        <p className="text-xs">© 2025 GuestKit.</p>
+        <p className="text-xs">© {new Date().getFullYear()} GuestsKit.</p>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-# BRIEF — Site vitrine GuestKit
+# BRIEF — Site vitrine GuestsKit
 
 > À placer à la racine du dépôt du site (et à référencer depuis son CLAUDE.md : « Lis BRIEF-SITE-GUESTKIT.md avant toute tâche de contenu ou de design »).
 > Ce site est le **site commercial** de la société. Il n'est PAS l'application elle-même.
@@ -8,7 +8,7 @@
 
 ## 1. La société et le produit en une phrase
 
-GuestKit vend aux hôtels une **conciergerie digitale** : une web app accessible par QR code, avec laquelle le client de l'hôtel découvre les restaurants, activités et spectacles, se repère sur le plan, et envoie des demandes à la réception, sans installer d'application.
+GuestsKit vend aux hôtels une **conciergerie digitale** : une web app accessible par QR code, avec laquelle le client de l'hôtel découvre les restaurants, activités et spectacles, se repère sur le plan, et envoie des demandes à la réception, sans installer d'application.
 
 Produit proposé : l'hôtel obtient **sa propre instance**, à son nom, sur son propre domaine, avec son logo, ses couleurs et son contenu.
 
@@ -49,7 +49,7 @@ Ne pas chiffrer ces problèmes sans source : aucune statistique inventée.
 - Réglages de l'hôtel (logo, identité).
 
 ### Modèle technique (à traduire en bénéfices, pas en jargon)
-- Une instance dédiée par hôtel (données isolées), hébergée sur Vercel + Supabase, sur le **nom de domaine de l'hôtel** (domaine pris en charge par GuestKit).
+- Une instance dédiée par hôtel (données isolées), hébergée sur Vercel + Supabase, sur le **nom de domaine de l'hôtel** (domaine pris en charge par GuestsKit).
 - À traduire en : « vos données sont à vous, séparées de celles des autres hôtels ».
 
 ### NON disponible / à ne pas promettre
@@ -87,7 +87,7 @@ CTA unique et répété : **« Demander une démo »**.
 - Style **éditorial, hôtelier haut de gamme** : beaucoup d'air, photographies, typographie soignée (une serif élégante pour les titres + une sans-serif lisible).
 - Signature visuelle reprise de l'app : **trait vertical coloré** (`w-1 h-8 rounded-full`) devant les titres de section.
 - Mettre en avant des **maquettes de téléphone** avec les vraies captures de l'app.
-- Palette : à dériver de l'identité GuestKit ; éviter l'aspect « template SaaS générique » (dégradés violets, cartes identiques).
+- Palette : à dériver de l'identité GuestsKit ; éviter l'aspect « template SaaS générique » (dégradés violets, cartes identiques).
 - Mobile d'abord (les hôteliers consultent beaucoup sur téléphone), accessible (contrastes, `alt`, focus visibles).
 - Captures d'écran : à produire à partir de la démo (https://guestskit.com). Masquer toute donnée personnelle de compte.
 
@@ -106,7 +106,7 @@ CTA unique et répété : **« Demander une démo »**.
 
 ## 11. Questions ouvertes (à trancher avec Fethi)
 
-- Nom de domaine et marque finale (GuestKit / guestskit.com côté démo ?).
+- Nom de domaine et marque finale (GuestsKit / guestskit.com côté démo ?).
 - Prix affichés ou sur devis ?
 - Logo, charte, photos utilisables.
 - Contact commercial affiché (email, téléphone, WhatsApp).
