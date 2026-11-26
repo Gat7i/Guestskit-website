@@ -343,7 +343,7 @@ function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <span className="block w-1 h-8 bg-gold rounded-full mb-7" aria-hidden="true" />
         <h2 className="font-serif text-4xl sm:text-5xl text-snow mb-16 leading-tight max-w-xl">
-          Mise en ligne rapide,<br />utilisé dès le premier scan.
+          Vos clients l'utilisent<br />dès le premier scan.
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {steps.map((s) => (
