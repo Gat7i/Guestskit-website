@@ -34,4 +34,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# captures sources (doublon de public/captures/ — garder uniquement public/)
+/captures-guestkit/
+
 .vercel

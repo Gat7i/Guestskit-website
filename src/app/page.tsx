@@ -56,6 +56,8 @@ const faqSchema = {
 };
 
 const DEMO_URL = process.env.NEXT_PUBLIC_DEMO_URL ?? "https://www.guestskit.app";
+// shortcut: placeholder activé à la compilation uniquement ; voir public/captures/LISEZ-MOI.md
+const CAPTURES_PLACEHOLDER = process.env.NEXT_PUBLIC_CAPTURES_PLACEHOLDER === "1";
 
 /* ── Page ─────────────────────────────────────────────────── */
 export default function Home() {
@@ -213,13 +215,15 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
     <div className="w-44 flex-shrink-0">
       <div className="bg-night rounded-[2.5rem] p-1.5 shadow-xl ring-1 ring-black/5">
         <div className="rounded-[2rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
-          <Image
-            src={src}
-            alt={alt}
-            width={176}
-            height={381}
-            className="w-full h-full object-cover"
-          />
+          {CAPTURES_PLACEHOLDER ? (
+            <div className="w-full h-full bg-night/60 flex items-center justify-center p-4">
+              <span className="text-snow/40 text-xs text-center leading-relaxed">
+                Capture de la démo à venir
+              </span>
+            </div>
+          ) : (
+            <Image src={src} alt={alt} width={176} height={381} className="w-full h-full object-cover" />
+          )}
         </div>
       </div>
     </div>
