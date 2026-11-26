@@ -163,6 +163,7 @@ function Hero() {
                   height={486}
                   className="w-full h-full object-cover"
                   priority
+                  sizes="224px"
                 />
               </div>
             </div>
@@ -215,7 +216,7 @@ function Problem() {
 /* ── Fonctionnalités côté client ──────────────────────────── */
 function PhoneFrame({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="w-44 flex-shrink-0">
+    <div className="w-36 sm:w-44 flex-shrink-0">
       <div className="bg-night rounded-[2.5rem] p-1.5 shadow-xl ring-1 ring-black/5">
         <div className="rounded-[2rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
           {CAPTURES_PLACEHOLDER ? (
@@ -225,7 +226,7 @@ function PhoneFrame({ src, alt }: { src: string; alt: string }) {
               </span>
             </div>
           ) : (
-            <Image src={src} alt={alt} width={176} height={381} className="w-full h-full object-cover" />
+            <Image src={src} alt={alt} width={176} height={381} className="w-full h-full object-cover" sizes="(max-width: 640px) 144px, 176px" />
           )}
         </div>
       </div>
@@ -404,10 +405,11 @@ function TeamFeatures() {
                   width={420}
                   height={260}
                   className="w-full object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 420px"
                 />
               </div>
               <h3 className="font-serif text-xl text-night mb-3">{f.title}</h3>
-              <p className="text-charcoal/70 text-sm leading-relaxed">{f.body}</p>
+              <p className="text-charcoal/80 text-sm leading-relaxed">{f.body}</p>
             </div>
           ))}
         </div>
@@ -432,7 +434,7 @@ function Demo() {
         </p>
 
         {/* Captures démo — 3 téléphones côte à côte */}
-        <div className="flex justify-center gap-6 mb-12">
+        <div className="flex justify-center gap-3 sm:gap-6 mb-12">
           {[
             { src: "/captures/c-accueil.jpg",    alt: "Écran d'accueil de la démo GuestsKit" },
             { src: "/captures/c-restaurants.jpg", alt: "Écran restaurants de la démo GuestsKit" },
@@ -440,11 +442,11 @@ function Demo() {
           ].map(({ src, alt }, i) => (
             <div
               key={src}
-              className={`w-36 flex-shrink-0 ${i === 1 ? "-mt-4" : "mt-4"}`}
+              className={`w-24 sm:w-36 flex-shrink-0 ${i === 1 ? "-mt-4" : "mt-4"}`}
             >
               <div className="bg-night rounded-[2.2rem] p-1.5 shadow-xl ring-1 ring-black/5">
                 <div className="rounded-[1.8rem] overflow-hidden" style={{ aspectRatio: "9/19.5" }}>
-                  <Image src={src} alt={alt} width={144} height={312} className="w-full h-full object-cover" />
+                  <Image src={src} alt={alt} width={144} height={312} className="w-full h-full object-cover" sizes="(max-width: 640px) 96px, 144px" />
                 </div>
               </div>
             </div>
@@ -529,7 +531,7 @@ function CtaFinal() {
 /* ── Footer ───────────────────────────────────────────────── */
 function Footer() {
   return (
-    <footer className="bg-[#060E1E] py-12 px-4 sm:px-6 text-snow/40">
+    <footer className="bg-[#060E1E] py-12 px-4 sm:px-6 text-snow/55">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
           <span className="font-serif text-snow text-xl block">GuestsKit</span>

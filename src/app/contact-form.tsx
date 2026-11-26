@@ -51,7 +51,7 @@ export default function ContactForm({ contactEmail }: Props) {
       </button>
 
       {/* shortcut: adresse visible dans le code source (risque spam) ; upgrade vers envoi serveur quand boîte pro configurée */}
-      <p className="text-snow/40 text-xs text-center">
+      <p className="text-snow/55 text-xs text-center">
         ou écrivez-nous à{" "}
         <a href={`mailto:${contactEmail}`} className="underline underline-offset-2 hover:text-snow/60">
           {contactEmail}
