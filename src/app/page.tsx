@@ -520,7 +520,7 @@ function CtaFinal() {
         </p>
 
         <ContactForm contactEmail={CONTACT_EMAIL} />
-        <p className="text-snow/30 text-xs mt-5">Réponse sous 24 h · Démo personnalisée gratuite</p>
+        <p className="text-snow/55 text-xs mt-5">Réponse sous 48 h · Démo personnalisée gratuite</p>
       </div>
     </section>
   );
