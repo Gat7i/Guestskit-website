@@ -450,7 +450,7 @@ function Demo() {
             Demander une démo personnalisée
           </a>
           <a
-            href="https://guestskit.app"
+            href="https://www.guestskit.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sapphire text-sm font-medium flex items-center gap-2 hover:text-sapphire/80 transition-colors sm:pt-3 focus-visible:outline-sapphire"
