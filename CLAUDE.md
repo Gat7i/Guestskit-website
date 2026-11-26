@@ -41,7 +41,8 @@ Définis dans `src/app/globals.css` sous `@theme` — utilisables comme classes 
 **Règles d'emploi :**
 - Le `gold` touche exactement deux éléments : le bouton CTA principal et la barre verticale de signature. Nulle part ailleurs.
 - Texte sur fond `gold` : toujours `text-night` (jamais blanc — contraste insuffisant).
-- Sur fond `night` : texte secondaire en `text-snow/55` ou `text-snow/60`, jamais `text-muted` (saphir sur nuit = contraste insuffisant).
+- Sur fond `night` ou `#060E1E` : texte secondaire minimum `text-snow/55` (5,5:1 ✓) ; jamais `text-snow/40` ni `text-snow/30` (< 4,5:1 ✗) ; jamais `text-muted`.
+- Sur fond `snow` : texte corps minimum `text-charcoal/80` (5,7:1 ✓) ; `text-charcoal/70` donne 4,35:1 sur snow (✗).
 
 ### Typographie
 
@@ -120,10 +121,30 @@ Dossier partagé : `C:\Users\fethi\Documents\Projets\guestskit-coordination\`
 
 ---
 
+## Pages techniques
+
+| Route | Fichier | État |
+|---|---|---|
+| `/` | `src/app/page.tsx` | ✅ prod |
+| `/mentions-legales` | `src/app/mentions-legales/page.tsx` | 404 prod (legalComplete=false) |
+| `/confidentialite` | `src/app/confidentialite/page.tsx` | 404 prod (legalComplete=false) |
+| Favicon 32×32 | `src/app/icon.tsx` | ✅ ImageResponse |
+| 404 | `src/app/not-found.tsx` | ✅ aux couleurs du site |
+| OG image | `src/app/opengraph-image.tsx` | ✅ |
+
+**Pages légales** : complétées par `src/lib/legal.ts` (droit tunisien, loi n° 2004-63 / INPDP).
+Remplir tous les champs vides de `legal.ts` → `legalComplete` passe à `true` → pages indexées et retirées du 404.
+Faire relire par un juriste avant activation.
+
+---
+
 ## Règles de contenu (rappel bref — détail dans BRIEF-SITE-GUESTKIT.md)
 
 - Aucune statistique inventée.
 - Aucun nom de client réel sans accord écrit de Fethi.
-- Hôtel fictif pour démo : **« Hôtel de la Mer (démo) »**.
+- Démo publique : www.guestskit.app (Les Orangers). Projet « Hôtel de la Mer (démo) » en pause.
+- Connexion client : e-mail ou Google uniquement (Facebook supprimé).
+- Formulaire : ouvre le client mail du visiteur → Gmail de Fethi. Aucun stockage serveur.
 - CTA unique répété : **« Demander une démo »**.
-- Marqueur `[À CONFIRMER]` pour toute information incertaine.
+- Délai de réponse : **48 h** (non 24 h).
+- Marqueur `[À CONFIRMER]` interdit en production (bloqué par `npm run check:markers`).
