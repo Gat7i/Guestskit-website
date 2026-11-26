@@ -136,6 +136,10 @@ Dossier partagé : `C:\Users\fethi\Documents\Projets\guestskit-coordination\`
 Remplir tous les champs vides de `legal.ts` → `legalComplete` passe à `true` → pages indexées et retirées du 404.
 Faire relire par un juriste avant activation.
 
+**Mesure d'audience** : `analytics: false` dans `legal.ts` — aucun outil actif.
+Google Analytics prévu dans un futur proche (décision Fethi). Avant d'activer :
+Google Analytics dépose des cookies → bandeau de consentement obligatoire + mise à jour de `/confidentialite` + passer `analytics: true` dans `legal.ts`.
+
 ---
 
 ## Règles de contenu (rappel bref — détail dans BRIEF-SITE-GUESTKIT.md)
