@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "./contact-form";
 
 /* ── JSON-LD Schema ───────────────────────────────────────── */
 const orgSchema = {
@@ -57,6 +58,7 @@ const faqSchema = {
 };
 
 const DEMO_URL = process.env.NEXT_PUBLIC_DEMO_URL ?? "https://www.guestskit.app";
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "fethi.amine.mami@gmail.com";
 // shortcut: placeholder activé à la compilation uniquement ; voir public/captures/LISEZ-MOI.md
 const CAPTURES_PLACEHOLDER = process.env.NEXT_PUBLIC_CAPTURES_PLACEHOLDER === "1";
 
@@ -517,47 +519,7 @@ function CtaFinal() {
           aux couleurs de votre hôtel.
         </p>
 
-        {/* shortcut: action mailto — pas de protection anti-spam, upgrade vers Resend/Formspree en prod */}
-        <form
-          action="mailto:contact@guestskit.com"
-          method="get"
-          encType="text/plain"
-          className="flex flex-col gap-4 max-w-md mx-auto text-left"
-        >
-          <input
-            type="text"
-            name="Nom"
-            placeholder="Votre nom"
-            required
-            className="w-full px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-snow placeholder-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          />
-          <input
-            type="text"
-            name="Hôtel"
-            placeholder="Nom de l'hôtel"
-            required
-            className="w-full px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-snow placeholder-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          />
-          <input
-            type="tel"
-            name="Téléphone"
-            placeholder="Numéro de téléphone"
-            className="w-full px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-snow placeholder-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          />
-          <input
-            type="email"
-            name="Email"
-            placeholder="Votre adresse e-mail"
-            required
-            className="w-full px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-snow placeholder-snow/30 focus:outline-none focus:ring-2 focus:ring-gold/50"
-          />
-          <button
-            type="submit"
-            className="w-full bg-gold text-night font-medium px-8 py-4 rounded-xl hover:bg-gold/90 transition-colors focus-visible:outline-2 focus-visible:outline-gold focus-visible:outline-offset-2"
-          >
-            Demander une démo
-          </button>
-        </form>
+        <ContactForm contactEmail={CONTACT_EMAIL} />
         <p className="text-snow/30 text-xs mt-5">Réponse sous 24 h · Démo personnalisée gratuite</p>
       </div>
     </section>
