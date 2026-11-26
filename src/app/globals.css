@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typographies */
+  --font-sans:    var(--font-dm-sans), system-ui, sans-serif;
+  --font-serif:   var(--font-cormorant), Georgia, serif;
+  --font-arabic:  var(--font-amiri), serif;
+
+  /* Palette GuestKit */
+  --color-night:    #0E1B34;   /* bleu nuit — fonds sombres */
+  --color-snow:     #F9F8F6;   /* neige froide — fonds clairs */
+  --color-sapphire: #2D55A0;   /* saphir — liens, accents interactifs */
+  --color-gold:     #C4933F;   /* or — CTA unique, barre signature */
+  --color-charcoal: #2E2E2E;   /* anthracite — texte corps */
+  --color-muted:    #9CA3AF;   /* gris doux — texte secondaire */
+  --color-border:   #E5E2DA;   /* séparateurs */
+}
