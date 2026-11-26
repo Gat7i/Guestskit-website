@@ -47,7 +47,7 @@ export default function MentionsLegales() {
           <h2 className="font-serif text-2xl text-night mb-3">Propriété intellectuelle</h2>
           <p>
             L'ensemble du contenu de ce site (textes, images, graphismes, logo) est la propriété exclusive de{" "}
-            {legal.raisonSociale || "[GuestsKit]"}, sauf mention contraire. Toute reproduction est interdite sans autorisation écrite préalable.
+            {legal.raisonSociale || "GuestsKit"}, sauf mention contraire. Toute reproduction est interdite sans autorisation écrite préalable.
           </p>
         </div>
       </section>

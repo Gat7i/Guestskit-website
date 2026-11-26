@@ -13,7 +13,7 @@ export const legal = {
   immatriculation: "",         // [À CONFIRMER : Fethi — numéro RNE ou équivalent]
   directeurPublication: "",    // [À CONFIRMER : Fethi — probablement Fethi Amine Mami]
   contactDonnees: "",          // [À CONFIRMER : Fethi — email du responsable données]
-  hebergeur: "Vercel Inc., 340 Pine Street Suite 701, San Francisco CA 94104, États-Unis",
+  hebergeur: "Vercel Inc. — vercel.com",
   dureeConservation: "",       // [À CONFIRMER : Fethi — durée de conservation des demandes de démo]
 
   // Ce que le site collecte réellement (vérification au 26/11/2026) :

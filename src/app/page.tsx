@@ -324,7 +324,7 @@ function HowItWorks() {
     {
       n: "2",
       title: "Création du compte",
-      body: "En quelques secondes via email, Google ou Facebook. Pas de formulaire complexe.",
+      body: "En quelques secondes par e-mail ou avec votre compte Google. Pas de formulaire complexe.",
     },
     {
       n: "3",
@@ -379,7 +379,7 @@ function TeamFeatures() {
           {[
             {
               title: "Check-in et validation des séjours",
-              body: "La réception crée le séjour du client, lui attribue sa chambre et valide son accès à l'application. Interface simple, prise en main sans formation particulière.",
+              body: "La réception crée le séjour du client, lui attribue sa chambre et valide son accès à l'application. Interface simple.",
               src: "/captures/a-checkin.jpg",
               alt: "Interface de check-in du back-office GuestsKit",
             },
