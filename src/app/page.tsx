@@ -13,11 +13,12 @@ const orgSchema = {
 const faqItems = [
   {
     q: "Faut-il télécharger une application ?",
-    a: "Non. GuestsKit est une application web (PWA). Vos clients y accèdent depuis le navigateur de leur téléphone, sans passer par l'App Store ni Google Play.",
+    // shortcut: "PWA" retiré — service worker non confirmé par App ; reformuler si confirmé
+    a: "Non. GuestsKit est une application web installable sur l'écran d'accueil, sans passer par l'App Store ni Google Play. Aucun téléchargement n'est nécessaire.",
   },
   {
     q: "Combien de temps faut-il pour déployer GuestsKit ?",
-    a: "L'installation, la configuration et la mise en ligne prennent 48 heures. Votre équipe reçoit une formation au back-office incluse dans la mise en place.",
+    a: "La mise en place est rapide et entièrement prise en charge par notre équipe : installation, configuration, import de vos contenus et formation du personnel. Nous convenons du calendrier précis avec vous lors de la démo.",
   },
   {
     q: "L'application sera-t-elle aux couleurs de notre hôtel ?",
@@ -36,8 +37,8 @@ const faqItems = [
     a: "Une connexion Internet est nécessaire pour accéder à l'application et envoyer des demandes. Elle fonctionne sur toute connexion mobile (3G/4G) ou Wi-Fi.",
   },
   {
-    q: "GuestsKit propose-t-il plusieurs langues ?",
-    a: "L'interface est actuellement disponible en français. La gestion multilingue est prévue dans les prochaines versions. [À CONFIRMER]",
+    q: "GuestsKit est-il disponible en plusieurs langues ?",
+    a: "L'interface est en français. La prise en charge d'autres langues est prévue dans une prochaine version.",
   },
   {
     q: "Qu'est-ce qui est inclus dans l'abonnement ?",
@@ -284,7 +285,7 @@ function ClientFeatures() {
       />
       <PhoneFeature
         title="Restaurants, bars et découvertes"
-        body="Horaires, menus du jour, spécialités : tout est à jour en temps réel. Vos clients consultent l'offre de restauration, découvrent vos activités et les suggestions autour de l'hôtel — sans quitter leur chambre."
+        body="Horaires, menus du jour, spécialités : tout est actualisé depuis le back-office. Vos clients consultent l'offre de restauration, découvrent vos activités et les suggestions autour de l'hôtel — sans quitter leur chambre."
         src="/captures/c-restaurants.jpg"
         alt="Écran des restaurants dans GuestsKit"
         src2="/captures/c-decouvertes.jpg"
@@ -301,7 +302,7 @@ function ClientFeatures() {
       />
       <PhoneFeature
         title="Demandes à la réception"
-        body="Votre client envoie une demande en quelques secondes — serviettes, nettoyage, maintenance, question. La réception reçoit la demande en temps réel et peut y répondre directement depuis son tableau de bord."
+        body="Votre client envoie une demande en quelques secondes — serviettes, nettoyage, maintenance, question. La réception voit la demande dans son tableau de bord avec son statut et son historique."
         src="/captures/c-demandes.jpg"
         alt="Écran des demandes client dans GuestsKit"
         reverse
@@ -340,7 +341,7 @@ function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <span className="block w-1 h-8 bg-gold rounded-full mb-7" aria-hidden="true" />
         <h2 className="font-serif text-4xl sm:text-5xl text-snow mb-16 leading-tight max-w-xl">
-          Opérationnel en 48 heures,<br />utilisé dès le premier scan.
+          Mise en ligne rapide,<br />utilisé dès le premier scan.
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {steps.map((s) => (
@@ -381,8 +382,8 @@ function TeamFeatures() {
               alt: "Interface de check-in du back-office GuestsKit",
             },
             {
-              title: "Suivi des demandes en temps réel",
-              body: "Chaque demande client arrive instantanément dans le tableau de bord. L'équipe la traite, la marque comme prise en charge et conserve un historique complet.",
+              title: "Suivi des demandes",
+              body: "Chaque demande client est visible dans le tableau de bord avec son statut et son historique. L'équipe la traite et la marque comme prise en charge.",
               src: "/captures/a-demandes.jpg",
               alt: "Tableau de bord des demandes dans GuestsKit",
             },

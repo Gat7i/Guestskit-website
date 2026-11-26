@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:markers": "node scripts/check-markers.js",
+    "prebuild": "npm run check:markers"
   },
   "dependencies": {
     "next": "^15.3.3",
