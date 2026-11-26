@@ -38,3 +38,6 @@ next-env.d.ts
 /captures-guestkit/
 
 .vercel
+
+# Dépendances du script de capture Playwright (ne pas commiter les binaires)
+scripts/capture/node_modules/
