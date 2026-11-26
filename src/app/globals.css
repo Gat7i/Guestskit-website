@@ -12,6 +12,6 @@
   --color-sapphire: #2D55A0;   /* saphir — liens, accents interactifs */
   --color-gold:     #C4933F;   /* or — CTA unique, barre signature */
   --color-charcoal: #2E2E2E;   /* anthracite — texte corps */
-  --color-muted:    #9CA3AF;   /* gris doux — texte secondaire */
+  --color-muted:    #6B7280;   /* gris — texte secondaire (4,55:1 sur snow, AA ✓) */
   --color-border:   #E5E2DA;   /* séparateurs */
 }
